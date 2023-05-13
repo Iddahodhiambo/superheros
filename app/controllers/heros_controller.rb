@@ -6,9 +6,8 @@ class HerosController < ApplicationController
         render json: heros
     end
      def show
-
-        hero = Hero.find_by(id: params[:id])
-        render json: hero
+      hero = Hero.find(params[:id])
+     render json: hero
      end
     
      private
