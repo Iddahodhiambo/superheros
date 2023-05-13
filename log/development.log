@@ -61,3 +61,73 @@ Migrating to CreatePowers (20230511185847)
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mPower Create (0.8ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Moline Achieng"], ["description", "Governor"], ["created_at", "2023-05-11 19:36:24.552205"], ["updated_at", "2023-05-11 19:36:24.552205"]]
   [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2023-05-13 10:27:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/iddah/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/iddah/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.9ms | Allocations: 766)
+Completed 200 OK in 32ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 6639)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:27:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/heros"):
+  
+Started GET "/heros" for ::1 at 2023-05-13 10:29:54 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+Completed 200 OK in 36ms (Views: 26.1ms | ActiveRecord: 2.9ms | Allocations: 20143)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:38:15 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 1.5ms | Allocations: 1533)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:38:17 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1407)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:38:18 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms | Allocations: 1407)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:38:20 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 1393)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:40:06 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 1418)
+
+
+Started GET "/" for ::1 at 2023-05-13 10:41:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/iddah/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/iddah/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.3ms | Allocations: 660)
+Completed 200 OK in 15ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5348)
+
+
+Started GET "/heros" for ::1 at 2023-05-13 10:41:12 +0300
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.64ms)
+Completed 200 OK in 62ms (Views: 44.6ms | ActiveRecord: 1.3ms | Allocations: 23168)
+
+
