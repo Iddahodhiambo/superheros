@@ -6,7 +6,7 @@ Hero.create(name:"Mwai Kibaki",super_name:"emilio")
 Hero.create(name:"Raila Odinga",super_name:"Agwambo")
 Hero.create(name:"Mekatilili Menza",super_name:"ratego")
 
-Power.create(name:"David owino",description:"Member of Parliament")
+Power.create(name:"Lwanda Magere",description:"Member of Parliament")
 Power.create(name:"James KImani",description:"MCA")
 Power.create(name:"Denita Gati",description:"Women Representative")
 Power.create(name:"Mswati swiza",description:"The king")
